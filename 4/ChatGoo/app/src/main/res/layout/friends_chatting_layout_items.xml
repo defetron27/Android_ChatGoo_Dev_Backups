@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/income_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/message_receiver_circle_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/assistant"
+            app:civ_border_color="#787878"
+            app:civ_border_width="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/receiver_text_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="7dp"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/receiver_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#5e5e5e"
+                    android:padding="6dp"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/receiver_message_text_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/receiver_image_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="7dp"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/receiver_message_image"
+                    android:layout_width="260dp"
+                    android:layout_height="180dp"
+                    android:textSize="18sp"
+                    android:textColor="#5e5e5e"
+                    android:padding="6dp"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/receiver_message_image_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/receiver_video_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="7dp"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/receiver_message_video"
+                    android:layout_width="260dp"
+                    android:layout_height="180dp"
+                    android:textSize="18sp"
+                    android:textColor="#5e5e5e"
+                    android:padding="6dp"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/receiver_message_video_size"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:drawableStart="@drawable/ic_file_download"
+                    android:background="@drawable/download_bg"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="13sp"
+                    android:textColor="#fff"
+                    android:layout_centerInParent="true"
+                    />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/receiver_message_video_play_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_play"
+                    android:contentDescription="@string/todo"
+                    android:layout_centerInParent="true"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/receiver_message_video_downloading_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:text="Downloading.."
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/receiver_message_video_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@id/receiver_message_video"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sender_text_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#aeaeae"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/sender_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#5e5e5e"
+                android:padding="6dp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/sender_message_text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sender_image_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#aeaeae"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/sender_message_image"
+                android:layout_width="260dp"
+                android:layout_height="180dp"
+                android:textSize="18sp"
+                android:textColor="#5e5e5e"
+                android:padding="6dp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/sender_message_image_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sender_video_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#aeaeae"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/sender_message_video"
+                android:layout_width="260dp"
+                android:layout_height="180dp"
+                android:textSize="18sp"
+                android:textColor="#5e5e5e"
+                android:padding="6dp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/sender_message_video_size"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:drawableStart="@drawable/ic_file_download"
+                android:background="@drawable/download_bg"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:paddingEnd="8dp"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/sender_message_video_play_btn"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_play"
+                android:contentDescription="@string/todo"
+                android:layout_centerInParent="true"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/sender_message_video_downloading_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="Downloading..."
+                android:visibility="gone"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/sender_message_video_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/sender_message_video"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

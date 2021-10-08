@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AssistantFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bot_chat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chatting_edittext"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_dropshadow"
+        android:layout_below="@id/bot_chat_recycler_view"
+        />
+
+    <EditText
+        android:id="@+id/chatting_edittext"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_bg"
+        android:hint="Say or Type something"
+        android:inputType="textMultiLine"
+        android:paddingBottom="23dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <ImageView
+            android:id="@+id/record_icon"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/record"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/todo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="3dp"
+            />
+
+        <ImageView
+            android:id="@+id/send_icon"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_right_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/todo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="3dp"
+            android:visibility="gone"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

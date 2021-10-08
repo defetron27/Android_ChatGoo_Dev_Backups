@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AssistantFragment"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bot_chat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/line"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_dropshadow"
+        android:layout_above="@id/chatting_edittext"
+        />
+
+    <EditText
+        android:id="@+id/chatting_edittext"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_bg"
+        android:hint="Say or Type something"
+        android:inputType="textMultiLine"
+        android:paddingBottom="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageView
+        android:id="@+id/record_icon"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/record"
+        android:contentDescription="@string/todo"
+        android:padding="3dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:id="@+id/send_icon"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_right_arrow"
+        android:contentDescription="@string/todo"
+        android:padding="3dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+
+    <com.deffe.max.chatgoo.Views.AVLoadingIndicatorView
+        android:id="@+id/speech_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorColor="#598bf2"
+        android:paddingBottom="3dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

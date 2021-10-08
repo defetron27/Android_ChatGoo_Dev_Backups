@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ChatGoo</string>
+
+    <string name="todo">TODO</string>
+
+    <string name="permission_preference">PERMISSION_PREFERENCE</string>
+
+    <!--Permissions-->
+
+    <string name="permission_ACCESS_NETWORK_STATE">PERMISSION_ACCESS_NETWORK_STATE</string>
+    <string name="permission_INTERNET">PERMISSION_INTERNET</string>
+    <string name="permission_RECORD_AUDIO">PERMISSION_RECORD_AUDIO</string>
+    <string name="permission_CHANGE_NETWORK_STATE">PERMISSION_CHANGE_NETWORK_STATE</string>
+    <string name="permission_CHANGE_WIFI_STATE">PERMISSION_CHANGE_WIFI_STATE</string>
+    <string name="permission_ACCESS_WIFI_STATE">PERMISSION_ACCESS_WIFI_STATE</string>
+    <string name="permission_BLUETOOTH">PERMISSION_BLUETOOTH</string>
+    <string name="permission_BLUETOOTH_ADMIN">PERMISSION_BLUETOOTH_ADMIN</string>
+    <string name="permission_ACCESS_FINE_LOCATION">PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_READ_CONTACTS">PERMISSION_READ_CONTACTS</string>
+    <string name="permission_WRITE_CONTACTS">PERMISSION_WRITE_CONTACTS</string>
+    <string name="permission_CALL_PHONE">PERMISSION_CALL_PHONE</string>
+    <string name="permission_READ_EXTERNAL_STORAGE">PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_WRITE_EXTERNAL_STORAGE">PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_CAMERA">PERMISSION_CAMERA</string>
+    <string name="permission_SET_ALARM">PERMISSION_SET_ALARM</string>
+
+    <!--Permissions-->
+
+</resources>

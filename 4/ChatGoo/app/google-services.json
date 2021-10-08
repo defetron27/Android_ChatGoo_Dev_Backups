@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "437525622283",
+    "firebase_url": "https://facerbot-923d2.firebaseio.com",
+    "project_id": "facerbot-923d2",
+    "storage_bucket": "facerbot-923d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437525622283:android:f21687d6f2582bbd",
+        "android_client_info": {
+          "package_name": "com.deffe.max.chatgoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437525622283-6aaui2rb0l8o4p3vd3vofavoel0b6lj5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deffe.max.chatgoo",
+            "certificate_hash": "c1fdf431c64b962bd1bf42ddd4e7255d01d76f6a"
+          }
+        },
+        {
+          "client_id": "437525622283-ev4u114bgc23v24mi04amm8tvu12b0vp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmM66pic7TNdU47RPzAgMkgXxdm4oh-p8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437525622283-m5o6dihgj5hj464faifd9dhap1f5od1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

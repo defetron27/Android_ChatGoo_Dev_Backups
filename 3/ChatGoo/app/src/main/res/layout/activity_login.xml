@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/sqr_bg"
+    android:id="@+id/login_activity"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_logo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/app_logo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:civ_border_width="4dp"
+            app:civ_border_color="#757575"
+            android:src="@drawable/assistant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.rilixtech.CountryCodePicker
+        android:id="@+id/user_country_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ccp_defaultNameCode="US"
+        android:background="@drawable/editext_bg"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/user_mobile_number_editext"
+        app:layout_constraintTop_toBottomOf="@id/constraint_logo"
+        />
+
+    <EditText
+        android:id="@+id/user_mobile_number_editext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Enter your mobile number"
+        android:background="@drawable/editext_bg"
+        android:padding="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/user_country_picker"
+        app:layout_constraintBottom_toTopOf="@id/send_otp_code_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="cupcake"
+        />
+
+    <Button
+        android:id="@+id/send_otp_code_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_mobile_number_editext"
+        android:text="Send OTP"
+        android:textAllCaps="false"
+        android:background="@drawable/editext_bg"
+        tools:targetApi="ice_cream_sandwich"
+        />
+
+    <EditText
+        android:id="@+id/user_received_otp_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter your email"
+        android:background="@drawable/editext_bg"
+        android:padding="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_logo"
+        app:layout_constraintBottom_toTopOf="@id/otp_code_verify_btn"
+        tools:targetApi="cupcake"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/otp_code_verify_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/resend_otp_code_btn"
+        app:layout_constraintTop_toBottomOf="@id/user_received_otp_edittext"
+        android:text="Verify OTP"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAllCaps="false"
+        android:background="@drawable/editext_bg"
+        tools:targetApi="ice_cream_sandwich"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/resend_otp_code_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otp_code_verify_btn"
+        android:text="ReSend OTP"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAllCaps="false"
+        android:background="@drawable/editext_bg"
+        tools:targetApi="ice_cream_sandwich"
+        android:visibility="gone"
+        />
+
+</android.support.constraint.ConstraintLayout>
